@@ -32,3 +32,6 @@ let g:airline_theme = "palenight"
 autocmd BufEnter * call ncm2#enable_for_buffer()
 " IMPORTANT: :help Ncm2PopupOpen for more information
 set completeopt=noinsert,menuone,noselect
+
+" my custom shortcuts
+nmap <C-p> :Files <CR>

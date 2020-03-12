@@ -34,4 +34,11 @@ autocmd BufEnter * call ncm2#enable_for_buffer()
 set completeopt=noinsert,menuone,noselect
 
 " my custom shortcuts
-nmap <C-p> :Files <CR>
+nmap <C-p> :Files <CR> 
+nnoremap <C-F> :Rgi <CR>                                                                                                                                                                                                               
+nnoremap <A-j> :m .+1<CR>==                                                                                                                                                                                                            
+nnoremap <A-k> :m .-2<CR>==                                                                                                                                                                                                            
+inoremap <A-j> <Esc>:m .+1<CR>==gi                                                                                                                                                                                                     
+inoremap <A-k> <Esc>:m .-2<CR>==gi                                                                                                                                                                                                     
+vnoremap <A-j> :m '>+1<CR>gv=gv                                                                                                                                                                                                        
+vnoremap <A-k> :m '<-2<CR>gv=gv
